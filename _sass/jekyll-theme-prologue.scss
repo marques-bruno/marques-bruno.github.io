@@ -276,6 +276,16 @@
 			float: right;
 			margin: 0 0 2em 2em;
 		}
+		&.smallright {
+			float: right;
+			margin: 0 0 2em 2em;
+			width: 30%;
+		}
+		&.smallleft {
+			float: left;
+			margin: 0 2em 2em 0;
+			width: 30%;
+		}
 
 		&.centered {
 			display: block;
