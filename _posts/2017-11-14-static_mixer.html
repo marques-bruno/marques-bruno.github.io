@@ -1,0 +1,32 @@
+---
+title: Static mixer for silicone foam
+layout: post
+---
+<!-- Text stuff -->
+<div class="contain">
+  <a href="#" class="image smallright"><img src="{{ 'assets/images/static_mixer/static_mixer_vertical_cropped.jpg' | relative_url }}" alt="A 3D printed static mixer"/></a>
+  I've done a lot of casting recently, trying to find the right material to mimick the behavior of organs tissues. My goal here is to build a phantom of the human liver that could be used for needle insertion. Some percutaneous procedures involve inserting a needle inside an organ to ablate a tumor. These procedures can be delicate and it's therefore a good idea for a surgeon to first train on synthetic data before working a human...<br/>
+  Sadly, silicone is a very, very dense material, and thus shows a great axial resistance when trying to insert a needle into it. far more than human tissues would. I decided to explore different types of silicones, silicone additives and other materials such as polyurethane foam for instance, to find a suitable material.<br/>
+  Most casting materials are composed of two parts that react together to form the stable, final product. This is the case of silicone for instance. Some of those materials have a very, very short pot life, such as silicone foam. And by short I mean a matter of seconds. Freezing the solution before mixing can help increase this pot life, but not by much. So I decided to look into potential ways of mixing the two parts together while pouring it into the mold, and found <a href="https://www.youtube.com/watch?v=4H2Vk7_cCCc">this video of a static mixing nozzle</a>.<br/>
+  What if, with my brand new 3D printer, I could make one of those? :)
+</div>
+
+<hr />
+<h2>Design with FreeCAD</h2>
+<p>
+  <a href="#" class="image smallright"><img src="{{ 'assets/images/static_mixer/cad_syringe.png' | relative_url }}" alt="CAD design of a double compartment syringe"/></a>
+  Before designing the nozzle, we need to consider what kind of device will push the material through it. I designed a syringe with two chambers to host separately the two silicone components that will mix together.<br/>
+  Since I salvaged large syringes from work, I decided to reuse the syringe's pistons instead of redesigning them myself.<br/>
+  The two chambers connect that the tip of the syringe, where a threading will secure the nozzle in place.<br/>
+  
+  <a href="#" class="image smallleft"><img src="{{ 'assets/images/static_mixer/cad_nozzle.png' | relative_url }}" alt="CAD design of the static mixing nozzle"/></a>
+  A static mixer nozzle is simply a cylinder, with stacked helixes revolving in opposite direction from each other. Because uncured silicone is a very thick and tacky substance, I went for a relatively large diameter of 5mm at the tip of the nozzle. A threading will help lock the nozzle into the syringe, and because this nozzle will be 3D printed, I decided to add some sort of an embedded support structure around the base. That's why the nozzle is so thick.<br/>
+Initially, I tried to make a reusable design, with ridges inside the nozzle in which I could slide single-use helixes. The idea itself wasn't bad, the nozzle would have been washable, and each helix took about 10min to print. But the very thin helixes would break while inserting them into the nozzle. I might think of a new design in the future, if the need comes up for something more reusable.
+</p>
+
+<p>
+  As you can see of the picture, the two parts coming out of the syringe are of different colors, but once it comes out of the syringe, the mixture seems uniform. Pouring the silicone inside the mold was very easy using this syringe.
+  Sadly, while the silicone looks well mixed, it wasn't as homogeneous as I hoped, and the silicone foam did not cure properly.<br/>
+  <a href="#" class="image fit"><img src="{{ 'assets/images/static_mixer/static_mixer_horizontal_cropped.jpg' | relative_url }}" alt="A 3D printed static mixer"/></a>
+  Better luck next time!
+</p>
