@@ -309,11 +309,59 @@
 	ul {
 		list-style: disc;
 
+		&.logos {
+			cursor: default;
+
+			li {
+			    display: inline-block;
+			    &.e3d {
+				background: url('logos/e3d_icon.png') no-repeat left top;
+				height: 45px;
+				padding-left: 50px;
+			    }
+			    &.preciousplastic {
+				background: url('logos/preciousplastic_icon.png') no-repeat left top;
+				height: 45px;
+				padding-left: 50px;
+			    }
+			    &.shadok {
+				background: url('logos/shadok_icon.png') no-repeat left top;
+				height: 45px;
+				padding-left: 50px;
+			    }
+			    &.toms3d {
+				background: url('logos/toms3d_icon.png') no-repeat left top;
+				height: 45px;
+				padding-left: 50px;
+			    }
+			    &.makersmuse {
+				background: url('logos/makersmuse_icon.png') no-repeat left top;
+				height: 45px;
+				padding-left: 50px;
+			    }
+			    &.cnckitchen {
+				background: url('logos/cnckitchen_icon.png') no-repeat left top;
+				height: 45px;
+				padding-left: 50px;
+			    }
+			    &.prusa {
+				background: url('logos/prusa_icon.png') no-repeat left top;
+				height: 45px;
+				padding-left: 50px;
+			    }
+			    &.pocketnc {
+				background: url('logos/pocketnc_icon.png') no-repeat left top;
+				height: 50px;
+				padding-left: 50px;
+			    }
+			}
+		}
+		
 		&.icons {
 			cursor: default;
 
 			li {
-				display: inline-block;
+			    display: inline-block;
 			}
 
 			a {
@@ -331,6 +379,8 @@
 		list-style: decimal;
 	}
 
+
+	
 /* Form */
 
 	form {
