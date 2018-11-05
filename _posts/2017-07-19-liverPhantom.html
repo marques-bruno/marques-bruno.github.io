@@ -1,0 +1,38 @@
+---
+title: A silicon liver phantom
+layout: post
+---
+<!-- Text stuff -->
+<p>I'd like to share a failed experiment I worked on in my lab, during my free time. In the context of my current project, we decided to try to build a phantom of the human liver that would  mimmick the opacity of liver tissues under xrays. For those who don't know the context of the project and are interested in the <i>why</i>, you can take a look at the <strong>IHU</strong> project I'm currently working on <a href="https://mimesis.inria.fr/projects/endovascular-surgery-fusion/">HERE</a>.<br/>
+  <br/>
+  The idea is to build a liver model that would
+  <ul>
+    <li>look like an actual liver, in terms of shape;</li>
+    <li>be deformable preferably, in a mecanically similar manner as an actual liver;</li>
+    <li>be made out of Radio-absorbing materials so we can see it in a CAT scan for instance;</li>
+    <li>have Internal structures (tumors, blood vessels etc.) that would be visible under xrays</li>
+    <li>be made of materials that wouldn't degrade with time</li>
+  </ul>
+
+  That being said the first pick for the material that comes to mind is silicone. Silicone is a very elastic material, extremely stable chemically, and can easily be casted into whatever shape you want, as long as you have a mold...<br/>
+  <br/>
+  There are different types and brands of silicones, but we already used the <a href="https://www.smooth-on.com/products/ecoflex-00-20/">Ecoflex 00-20 from Smooth-On</a> that is very soft, and the <a href="https://www.smooth-on.com/products/mold-max-10/">Mold Max 10</a> that is much harder.<br/>
+  Since it's an early prototype, and we happen to have some Mold Max hanging around, we used this for a start.<br/>
+  <a href="#" class="image smallright"><img src="{{ 'assets/images/siliconliver/BaSO4_concentration.png' | relative_url }}" alt="various concentrations of Barium sulfate inside silicone samples" title="various concentrations of Barium sulfate inside silicone samples"/></a><br/>
+  Now for the x-rays, we want to be able to play with the radio-absorption of the silicone. We used Barium sulfate (BaSO4) (which is used clinically as a contrast agent) and mixed it with the silicone to increase its radio-opacity.<br/>
+  We made small silicone samples, with different concentrations of barium sulfate, and compared it to CT images of a human liver. 5% of BaSO4 seems to be what got us the closest.<br/>
+  <a href="#" class="image smallleft"><div class="row">
+      <div class="6u 12u$(small)">
+	<img src="{{ 'assets/images/siliconliver/mini_mold_rotated.png' | relative_url }}" alt="A miniature prototype of the final PVA mold. vasculature can be seen inside"/>
+      </div>
+      <div class="6u 12u$(small)">
+	<img src="{{ 'assets/images/siliconliver/PVA_mold.png' | relative_url }}" alt="The final PVA mold"/>
+      </div>
+  </div></a>
+  Finally, we need to create a mold for our liver, and we need to figure out how to cast the blood vessels inside. A colleague got the idea to 3D print a shell in PVA (a water-soluble material) that would contain the blood vessels, and to then cast the silicone in that shell. We could then dissolve the shell, and fill the cavities left by the blood vessels with a more contrasted silicone.<br/><br/>
+  The PVA mold was printed on a Prusa MK2, was at the maximum of the build plate's capacity and took almost 60 hours to finish. There was some issues with the print and we've had to add support structures inside the mold, and remove them with a laparoscopic grasper. Sadly, We partially damaged the internal structures during the process.<br/><br/>
+  <a href="#" class="image smallright"><img src="{{ 'assets/images/siliconliver/casted_liver.png' | relative_url }}" alt="The silicone liver after boiling for 7 hours" title="The silicone liver after boiling for 7 hours"/></a>
+  After a week in tepid water, the shell barely dissolved. PVA is hydrosoluble, but dissolves best at 90°C. So I put it in the largest pot I found, and boiled it for 7 hours. At that point, the external shell entirely dissolved, but the internal structures were almost intact.
+  The liver itself is visible in the CT scanner, but the inner structures are almost completely invisible. It is not a surprise, given that we couldn't remove the PVA from them, thus couldn't fill them up with BaS04-enhanced silicone either. At this point, the experiment is a failure and while I have some ideas on how to renew the attempt, it will have to wait as I don't have more time to dedicate to this project at the moment.
+  
+  
