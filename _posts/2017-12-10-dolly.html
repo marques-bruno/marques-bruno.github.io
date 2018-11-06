@@ -3,10 +3,10 @@ title: Dolly MK2 clone
 layout: post
 ---
 <!-- Text stuff -->
-<p><a href="#" class="image smallright"><img src="{{ 'assets/images/dolly/03.jpg' | relative_url }}" alt="Our take on the dolly clone"/></a>
+<div class="contain"><a href="#" class="image smallright"><img src="{{ 'assets/images/dolly/03.jpg' | relative_url }}" alt="Our take on the dolly clone"/></a>
 My colleague Christoph Paulus was interested in buying a 3D printer, and I was interested in building one. I stumbled upon a video series by Thomas Sanladerer on <a href="https://www.youtube.com/watch?v=oVWLpvekby0&list=PLDJMid0lOOYkdh8jCqIw7AFIHQiuKbSKZ">youtube</a> and we decided to get into the adventure.
 Also, a friend of mine who owns a prusa modified the frame for more stability, following this post <a href="https://www.thingiverse.com/thing:1692666">from thingiverse</a> and we decided to add this mod to our clone.
-</p>
+</div>
 
 
 <hr />
@@ -80,8 +80,8 @@ In the end, to our surprise, what really costs a lot of money is all the small h
 </div>
 
 <div class="contain">
-  <div class="image smallright">
-    <iframe src="https://www.youtube.com/embed/zmEIb6LwKCI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <div class="video smallright">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/zmEIb6LwKCI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
   </div>
   After a few assembling sessions and a lot of debugging in the marlin config file, here it is, live and working!
 </div>
@@ -91,8 +91,8 @@ In the end, to our surprise, what really costs a lot of money is all the small h
 <p>
 <a href="#" class="image smallright"><img src="{{ 'assets/images/dolly/02.jpg' | relative_url }}" alt="Our take on the dolly clone"/></a>
 During the debugging phase of the build, we ripped the hair off our heads because the prints were just terrible at first, and we couldn't figure out why... At some point, my colleague lost hope, and decided to convert it into a laser engraver. It was actually a GREAT idea, because seeing the laser perform helped me realise that the problem was simply a loose pulley on the Y axis. Instead of trying to tweak the firmware looking for a solution, ALWAYS check your hardware first, especially loose screws... Anyway, the laser module cost us a bit less than 40 bucks on AliExpress, and is allegedly powerful enough to cut through thin sheets of plywood. We only used it to engrave wood for now, though. Here it is in action:
-<div class="image">
-  <iframe src="https://www.youtube.com/embed/pyDU04b6dsU?mute=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </div>
+<div class="image smallleft">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/pyDU04b6dsU?mute=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 </p>
 <p>I've learned a lot from this build, and clearly, there are many things to improve. first of all, some proper lead screws would be a great upgrade. The inductive Z-probe is really, really bad at detecting the print surface, and almost has to touch it to trigger.But it works, and it was a fun experience for a first build. I really hope to work on similar projects in the future!</p>
