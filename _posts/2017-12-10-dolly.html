@@ -10,6 +10,7 @@ Also, a friend of mine who owns a prusa modified the frame for more stability, f
 
 
 <hr />
+
 <h2>Pricing</h2>
 <p>If you are patient, <b>almost</b> all the required parts can be bought for peanuts on <a href="https://www.aliexpress.com">AliExpress</a>. Just be aware that shipping can take up to 2 months.<br/>Finally, you will need 3D printed parts. If you already have a printer, you can just print them yourself. In our case, we ordered them online through the crowdsourced platform <a href="https://www.3dhubs.com">3Dhubs</a> for less than 50€.<br/>
 In the end, to our surprise, what really costs a lot of money is all the small hardware, nuts & bolts, bearings, rods, pulleys etc. the variety of lengths forces to buy multiple bundles and leaves you with many unused items.<br/> We had the chance to have access to a lot of scrap machines from which I salvaged lots of screws, bearings, and even two stepper motors. This definitely reduced the price of the build, and if you have that possibility, take advantage of it!
@@ -88,11 +89,17 @@ In the end, to our surprise, what really costs a lot of money is all the small h
 
 
 <h3>Laser Engraver conversion</h3>
-<p>
+<div class="contain">
 <a href="#" class="image smallright"><img src="{{ 'assets/images/dolly/02.jpg' | relative_url }}" alt="Our take on the dolly clone"/></a>
-During the debugging phase of the build, we ripped the hair off our heads because the prints were just terrible at first, and we couldn't figure out why... At some point, my colleague lost hope, and decided to convert it into a laser engraver. It was actually a GREAT idea, because seeing the laser perform helped me realise that the problem was simply a loose pulley on the Y axis. Instead of trying to tweak the firmware looking for a solution, ALWAYS check your hardware first, especially loose screws... Anyway, the laser module cost us a bit less than 40 bucks on AliExpress, and is allegedly powerful enough to cut through thin sheets of plywood. We only used it to engrave wood for now, though. Here it is in action:
+During the debugging phase of the build, we ripped the hair off our heads because the prints were just terrible at first, and we couldn't figure out why... At some point, my colleague lost hope, and decided to convert it into a laser engraver. It was actually a GREAT idea, because seeing the laser perform helped me realise that the problem was simply a loose pulley on the Y axis. Instead of trying to tweak the firmware looking for a solution, ALWAYS check your hardware first, especially loose screws...<br/>
 <div class="image smallleft">
   <iframe width="560" height="315" src="https://www.youtube.com/embed/pyDU04b6dsU?mute=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
+Anyway, the laser module cost us a bit less than 40 bucks on AliExpress, and is allegedly powerful enough to cut through thin sheets of plywood. We only used it to engrave wood for now, though. Here it is in action:
+</div>
+<p>I've learned a lot from this build, and clearly, there are many things to improve. first of all, some proper lead screws would be a great upgrade. The inductive Z-probe is really, really bad at detecting the print surface, and almost has to touch it to trigger.But it works, and it was a fun experience for a first build. I really hope to work on similar projects in the future!
 </p>
-<p>I've learned a lot from this build, and clearly, there are many things to improve. first of all, some proper lead screws would be a great upgrade. The inductive Z-probe is really, really bad at detecting the print surface, and almost has to touch it to trigger.But it works, and it was a fun experience for a first build. I really hope to work on similar projects in the future!</p>
+
+<h2>Gallery</h2>
+<hr/>
+{% include photo-gallery.html folder="/assets/images/dolly/gallery" %}
