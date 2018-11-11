@@ -74,6 +74,8 @@ body {
     }
 }
 
+
+
 input, textarea, select {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 19pt;
@@ -129,13 +131,13 @@ em, i {
 
 a {
     text-decoration: none;
-    color: inherit;
+    color: #44887B;
     border-bottom: dotted 1px rgba(128, 128, 128, 0.5);
     @include vendor('transition', ('color 0.35s ease-in-out', 'border-bottom-color 0.35s ease-in-out'));
     outline: 0;
 
     &:hover {
-	color: #88FCDD;
+	color: #6BCE9C;
 	border-bottom-color: rgba(255, 255, 255, 0);
     }
 }
@@ -233,6 +235,30 @@ section, article {
 	padding-left: 0.25em;
 	margin-left: 1.25em;
     }
+}
+
+.backtotop {
+    // display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 999; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background: rgba(128, 136, 144, 0.5);
+    color: black; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 10px; /* Some padding */
+    padding-top: 3px; /* Some padding */
+    padding-bottom: 3px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+
+    &:hover {
+	background: rgba(108, 206, 180, 0.5);
+	color: #fff !important;
+    }
+
 }
 
 /* Image */
@@ -1187,7 +1213,7 @@ button,
     }
 
     .container {
-	padding: 0 15px 0 15px;
+	padding: 15px 15px 0 15px;
     }
 
     /* List */
