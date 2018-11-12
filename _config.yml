@@ -64,3 +64,4 @@ collections: [sections]
 plugins:
   - jekyll-seo-tag
   - jekyll-paginate
+  - jekyll-sitemap
