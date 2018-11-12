@@ -3,7 +3,7 @@ title: Dolly MK2 clone
 layout: post
 ---
 <!-- Text stuff -->
-<div class="contain"><a href="#" class="image smallright"><img src="{{ 'assets/images/dolly/03.jpg' | relative_url }}" alt="Our take on the dolly clone"/></a>
+<div class="contain justified"><a href="#" class="image smallright"><img src="{{ 'assets/images/dolly/03.jpg' | relative_url }}" alt="Our take on the dolly clone"/></a>
 My colleague Christoph Paulus was interested in buying a 3D printer, and I was interested in building one. I stumbled upon a video series by Thomas Sanladerer on <a href="https://www.youtube.com/watch?v=oVWLpvekby0&list=PLDJMid0lOOYkdh8jCqIw7AFIHQiuKbSKZ">youtube</a> and we decided to get into the adventure.
 Also, a friend of mine who owns a prusa modified the frame for more stability, following this post <a href="https://www.thingiverse.com/thing:1692666">from thingiverse</a> and we decided to add this mod to our clone.
 </div>
@@ -12,7 +12,7 @@ Also, a friend of mine who owns a prusa modified the frame for more stability, f
 <hr />
 
 <h2>Pricing</h2>
-<p>If you are patient, <b>almost</b> all the required parts can be bought for peanuts on <a href="https://www.aliexpress.com">AliExpress</a>. Just be aware that shipping can take up to 2 months.<br/>Finally, you will need 3D printed parts. If you already have a printer, you can just print them yourself. In our case, we ordered them online through the crowdsourced platform <a href="https://www.3dhubs.com">3Dhubs</a> for less than 50€.<br/>
+<p class="justified">If you are patient, <b>almost</b> all the required parts can be bought for peanuts on <a href="https://www.aliexpress.com">AliExpress</a>. Just be aware that shipping can take up to 2 months.<br/>Finally, you will need 3D printed parts. If you already have a printer, you can just print them yourself. In our case, we ordered them online through the crowdsourced platform <a href="https://www.3dhubs.com">3Dhubs</a> for less than 50€.<br/>
 In the end, to our surprise, what really costs a lot of money is all the small hardware, nuts & bolts, bearings, rods, pulleys etc. the variety of lengths forces to buy multiple bundles and leaves you with many unused items.<br/> We had the chance to have access to a lot of scrap machines from which I salvaged lots of screws, bearings, and even two stepper motors. This definitely reduced the price of the build, and if you have that possibility, take advantage of it!
   I'm adding a list of parts because I've modified slightly Thomas Sanladerer's design to adapt to the frame, but when ordering the parts, compare with<a href="https://toms3d.org/2017/02/23/building-cheapest-possible-prusa-i3-mk2/"> toms3d's own parts list</a> that is more accurate. Mine is more to give a rough idea. You will also find the files for the 3D printed parts on toms3D's list of parts. Some are the standard prusa files, some other are adapted for Tom's build. The aluminium frame also requires modified parts. If you want the aluminium frame, you'll have to sort through those.<br/>
   Overall, we managed to stay under 350€, despite buying the aluminium profiles to a faster (and waay more expensive) German supplier, and burning our RAMPS and Arduino boards twice... Yikes! In fact, I would advise you to immediately double down your electronics components orders. Accidents happen fast, especially if like us, this is your first electronics project ever. it will save you the time to reorder and wait a month to keep on going with your build!
@@ -89,15 +89,16 @@ In the end, to our surprise, what really costs a lot of money is all the small h
 
 
 <h3>Laser Engraver conversion</h3>
-<div class="contain">
-<a href="#" class="image smallright"><img src="{{ 'assets/images/dolly/02.jpg' | relative_url }}" alt="Our take on the dolly clone"/></a>
-During the debugging phase of the build, we ripped the hair off our heads because the prints were just terrible at first, and we couldn't figure out why... At some point, my colleague lost hope, and decided to convert it into a laser engraver. It was actually a GREAT idea, because seeing the laser perform helped me realise that the problem was simply a loose pulley on the Y axis. Instead of trying to tweak the firmware looking for a solution, ALWAYS check your hardware first, especially loose screws...<br/>
-<div class="image smallleft">
+<div class="contain justified">
+<a href="#" class="image smallleft"><img src="{{ 'assets/images/dolly/02.jpg' | relative_url }}" alt="Our take on the dolly clone"/></a>
+During the debugging phase of the build, we ripped the hair off our heads because the prints were just terrible at first, and we couldn't figure out why... At some point, my colleague lost hope, and decided to convert it into a laser engraver. It was actually a GREAT idea, because seeing the laser perform helped me realise that the problem was simply a loose pulley on the Y axis. Instead of trying to tweak the firmware looking for a solution, ALWAYS check your hardware first, especially loose screws...</div>
+<div class="video smallright">
   <iframe width="560" height="315" src="https://www.youtube.com/embed/pyDU04b6dsU?mute=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
+<div class="justified">
 Anyway, the laser module cost us a bit less than 40 bucks on AliExpress, and is allegedly powerful enough to cut through thin sheets of plywood. We only used it to engrave wood for now, though. Here it is in action:
 </div>
-<p>I've learned a lot from this build, and clearly, there are many things to improve. first of all, some proper lead screws would be a great upgrade. The inductive Z-probe is really, really bad at detecting the print surface, and almost has to touch it to trigger.But it works, and it was a fun experience for a first build. I really hope to work on similar projects in the future!
+<p class="justified">I've learned a lot from this build, and clearly, there are many things to improve. first of all, some proper lead screws would be a great upgrade. The inductive Z-probe is really, really bad at detecting the print surface, and almost has to touch it to trigger.But it works, and it was a fun experience for a first build. I really hope to work on similar projects in the future!
 </p>
 
 <h2>Gallery</h2>

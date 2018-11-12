@@ -3,22 +3,22 @@ title: Creality CR-10 Upgrades, Part 2
 layout: post
 ---
 <!-- Text stuff -->
-<div class="contain">
+<div class="contain justified">
   <a href="#" class="image smallright"><img src="{{ 'assets/images/cr10b/02.jpg' | relative_url }}" alt="Upgrade to an e3d-v6"/></a>
   Here we go with a new batch of upgrades for my Creality CR10 printer! I've ordered some great new components, found some great mods on Thingiverse, and most importantly, I've set up Octoprint for my printers. Let's get to it!
 </div>
 
 <hr />
-<h2>Setting up an Octoprint server</h2>
-<p>
-  <a href="#" class="image smallright"><img src="{{ 'assets/images/cr10b/octoprint_logo.png' | relative_url }}" alt="Octoprint logo"/></a>Probably the most useful upgrade I've done so far: installing an octoprint server on a Raspberry Pi!<br/>
+<h2><img class="avatar48" width="35" src="{{ 'assets/images/cr10b/octoprint_logo.png' | relative_url }}" alt="Octoprint logo"/> Setting up an Octoprint server <img class="avatar48" width="35" src="{{ 'assets/images/cr10b/octoprint_logo.png' | relative_url }}" alt="Octoprint logo"/></h2>
+<p class="justified">
+  Probably the most useful upgrade I've done so far: installing an octoprint server on a Raspberry Pi!<br/>
   If you're reading this, you probably already know this, but the Raspberry Pi is a small and very cheap computer, almost the size of a credit card. The one I have, a Raspberry Pi 3 B, is USB-powered, has four USB type-A ports, an ethernet, HDMI and jack port.<br/>
   <a href="#" class="image smallleft"><img src="{{ 'assets/images/cr10b/octopi_case.png' | relative_url }}" alt="3D printed case for my raspberry pi"/></a>Octoprint can be installed on linux distributions such as ubuntu, debian etc, and there's a pre-installed distribution of linux called Octopi. I installed two separated instances of octoprint on my raspberry pi and bought two logitech webcams.
   I can now control and monitor both of my 3D printers that I have at work from anywhere. I've printed a small case for the Raspberry-pi, that easily attaches to the control box of my CR-10. I also printed <a href="https://www.thingiverse.com/thing:2767804">a webcam holder from Thingiverse</a> for the two logitech c270 cameras I bought. The design is not articulated, and can only rotate around its attach point, but that's enough for monitoring. I had a problem though, that is that those cheap logitech cameras have no auto-focus, and the default focal distance of the camera was too far away to get a sharp image. I found <a href="https://www.youtube.com/watch?v=61D186Ver3Q">this video</a> explaining how to fix the focus, and it worked out great!
 </p>
 
 <h2>Upgrading the print surface</h2>
-<p>
+<p class="justified">
   <a href="#" class="image smallright"><img src="{{ 'assets/images/cr10b/printbite+.jpg' | relative_url }}" alt="bed leveling test on the printbite+ print surface"/></a>The CR-10 has manual calibration. This means that the bed surface must be really flat, since the printer will not account for any irregularity of the print bed. The bigger the bed surface, the least likely it is to be perfectly flat. Moreover, heat often causes the print surface to warp, making the bed even less flat.<br/>
   That's why the CR-10 uses a piece of float glass on top of the aluminium bed. Sadly, there are two problems with the float glass that Creality ships with the printer: It's not actually flat, compared to my expectations (at least mine wasn't), and it's quite thick, which further increases the heating time.<br/>
   Some people have installed cheap IKEA mirrors on their CR-10, so I decided to give it a try. It's 3mm thick and has the right dimension. Also, it's much flatter than the glass provided by Creality. Bonus point: it only costs 7€ for a pack of four!<br/>
@@ -27,10 +27,12 @@ layout: post
 </p>
 
 <h2>Z-probe installation & e3d-v6 conversion</h2>
-<p>
+<p class="justified">
   <a href="#" class="image smallright"><img src="{{ 'assets/images/cr10b/ir-probe.png' | relative_url }}" alt="height sensor mount on my printer"/></a>Installing a proximity sensor on my printer is the most complex update I've done on the printer so far. I could have gone for the pre-made <a href="https://www.th3dstudio.com/ezabl-kit/">EZABL kit from th3d</a>, but the point of those upgrades is to play around with my printer... so I decided to go for something more original.<br/>
-  Both of my printers have now PrintBite+ surfaces on top of a glass mirror. This means that inductive sensors would not work. Capacitive sensors would have done the job, but they usually operate at 6-36v, and the Melzi board doesn't have output pins with this kind of voltage, which means that I would have to derive some current from the power supply and add a voltage divider not to fry my control board. Instead, I heard about the <a href="https://miscsolutions.wordpress.com/mini-height-sensor-board/">mini differential IR height sensor by David Crocker</a>, and this looks exactly like what I'm looking for! It operates at 3.3-5v, is very accurate and repeatable, triggers at 2-3mm from the build surface, which gives enough clearance not to crash into the bed, and most importantly, it is barely sensitive to temparature changes, contrary to inductive or capacitive probes.<br/>
-  <h3>e3d-v6 conversion</h3>
+  Both of my printers have now PrintBite+ surfaces on top of a glass mirror. This means that inductive sensors would not work. Capacitive sensors would have done the job, but they usually operate at 6-36v, and the Melzi board doesn't have output pins with this kind of voltage, which means that I would have to derive some current from the power supply and add a voltage divider not to fry my control board. Instead, I heard about the <a href="https://miscsolutions.wordpress.com/mini-height-sensor-board/">mini differential IR height sensor by David Crocker</a>, and this looks exactly like what I'm looking for! It operates at 3.3-5v, is very accurate and repeatable, triggers at 2-3mm from the build surface, which gives enough clearance not to crash into the bed, and most importantly, it is barely sensitive to temparature changes, contrary to inductive or capacitive probes.
+</p>
+<h2>e3d-v6 conversion</h2>
+<p class="justified">
   <a href="#" class="image smallleft"><img src="{{ 'assets/images/cr10b/heavyduty_parts.jpg' | relative_url }}" alt="Printing my heavy-duty mount in PETG on my CR-10"/></a>Installing this probe required me to design an attachment system, which means changing the design of my X carriage. Since I also wanted to replace the stock CR-10 extruder to an <a href="https://e3d-online.com/v6">all-metal hotend by e3d</a>, I looked on Thingiverse for a modular design. I decided to go for the <a href="https://www.thingiverse.com/thing:2494642">Heavy duty mount by chito</a>. and designed an attachment for my Z-probe using the open-source software FreeCAD.<br/>
   The e3d-v6, contrary to the CR-10's stock hotend, is what's called an all-metal hotend. Most extruders have their teflon tube going down into the heating element of the hotend. Teflon cannot resist temperatures higher than 240°C for a suntained period of time without degrading and releasing toxic fumes. Installing this e3d-v6 will allow me to print strong materials with higher melting points, such as nylon or polycarbonate (provided that I build an enclosure for my printer!)
 </p>

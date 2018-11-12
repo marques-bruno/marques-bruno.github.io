@@ -3,7 +3,7 @@ title: Static mixer for silicone foam
 layout: post
 ---
 <!-- Text stuff -->
-<div class="contain">
+<div class="contain justified">
   <a href="#" class="image smallright"><img src="{{ 'assets/images/static_mixer/static_mixer_vertical_cropped.jpg' | relative_url }}" alt="A 3D printed static mixer"/></a>
   I've done a lot of casting recently, trying to find the right material to mimick the behavior of organs tissues. My goal here is to build a phantom of the human liver that could be used for needle insertion. Some percutaneous procedures involve inserting a needle inside an organ to ablate a tumor. These procedures can be delicate and it's therefore a good idea for a surgeon to first train on synthetic data before working a human...<br/>
   Sadly, silicone is a very, very dense material, and thus shows a great axial resistance when trying to insert a needle into it. far more than human tissues would. I decided to explore different types of silicones, silicone additives and other materials such as polyurethane foam for instance, to find a suitable material.<br/>
@@ -13,7 +13,7 @@ layout: post
 
 <hr />
 <h2>Design with FreeCAD</h2>
-<p>
+<p class="justified">
   <a href="#" class="image smallright"><img src="{{ 'assets/images/static_mixer/cad_syringe.png' | relative_url }}" alt="CAD design of a double compartment syringe"/></a>
   Before designing the nozzle, we need to consider what kind of device will push the material through it. I designed a syringe with two chambers to host separately the two silicone components that will mix together.<br/>
   Since I salvaged large syringes from work, I decided to reuse the syringe's pistons instead of redesigning them myself.<br/>
@@ -24,7 +24,7 @@ layout: post
 Initially, I tried to make a reusable design, with ridges inside the nozzle in which I could slide single-use helixes. The idea itself wasn't bad, the nozzle would have been washable, and each helix took about 10min to print. But the very thin helixes would break while inserting them into the nozzle. I might think of a new design in the future, if the need comes up for something more reusable.
 </p>
 
-<p>
+<p class="justified">
   As you can see of the picture, the two parts coming out of the syringe are of different colors, but once it comes out of the syringe, the mixture seems uniform. Pouring the silicone inside the mold was very easy using this syringe.
   Sadly, while the silicone looks well mixed, it wasn't as homogeneous as I hoped, and the silicone foam did not cure properly.<br/>
   <a href="#" class="image fit"><img src="{{ 'assets/images/static_mixer/static_mixer_horizontal_cropped.jpg' | relative_url }}" alt="A 3D printed static mixer"/></a>
